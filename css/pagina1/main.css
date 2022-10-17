@@ -1,0 +1,305 @@
+main{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Roboto', sans-serif;
+}
+
+.textmain {
+    max-width: 31.25rem;
+    font-size: 3.5625rem;
+    font-weight: 300;
+    line-height: 4.1875rem;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.content-container{
+    display: flex;
+    flex-direction: column;
+    gap: 3.125rem;
+}
+
+.content-container span{
+    font-weight: 700;
+    color: var(--primary-color);
+}
+.content-container img{
+    height: 25%;
+}
+.student-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.student-container img{
+    height: 60%;
+}
+
+
+.cursos{
+    display: flex;
+    gap: 40px;
+    width: 25%;
+  
+    flex-direction: column;
+    
+}
+
+.container-link{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    width: 400px;
+    height: 200px;
+    border-radius: 8px;
+    transition: all ease-in-out .5s;
+}
+
+.container-link:hover{
+    box-shadow: 20px 20px 7px var(--secondary-color);
+    
+}
+
+.link{
+    font-size: clamp(1rem, 5vw, 4rem);
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icone {
+    width: 100px;
+}
+
+
+
+.status{
+    font-family: 'Roboto';
+    font-size: 1rem;
+    color: #3347B0;
+
+}
+
+
+
+.menu{
+    display: flex;
+    gap: 30px;
+    
+    
+}
+
+.menu li{
+    position: relative;   
+   
+}
+
+.menu li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    font-weight: bold;
+    font-family: 'Roboto';
+    padding: 13px;
+   
+    
+    
+}
+
+.menu li ul{
+    position: absolute;
+    display: none;
+    
+}
+
+.menu li:hover ul, .menu li.over ul{
+    display:block;
+    
+}
+
+.menu li ul li{
+    
+    background: #3347B0;
+    display:block;
+    
+    
+}
+
+.legenda{
+    display: flex;
+    gap: 10px;
+}
+
+.legenda li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.caixa{
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+    width: 20px;
+    height: 20px;
+   
+}
+
+.azul{
+    background: #3347B0;
+}
+
+.amarela{
+    background-color: #E5B657;
+}
+
+nav{
+    display: flex;
+    background-color: #BCC2E5;
+    align-items: center;
+    height: auto;
+    padding: 10px;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    justify-content: space-between;
+}
+
+
+
+h3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #3347B0;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 4rem;
+    line-height: 75px;
+    color: #3347B0;
+}
+
+.alunos-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+}
+
+.alunos-card{
+    margin: 1%;
+    width: 13%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    transition: all ease-in-out .5s;
+}
+
+.alunos-card:hover{
+    box-shadow: 10px 10px rgba(51, 71, 176, 0.5);
+}
+
+.alunos-azul{
+    background-color: #3347B0;
+}
+.alunos-amarelo{
+    background-color: #E5B657;
+}
+
+.alunos-card img{
+    margin-top: 20px;
+    width: 70%;
+}
+
+.alunos-card h3{
+    margin: 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:768px){
+    main{
+        flex-direction: column;
+    }
+    .student-container{
+        display: none;
+    }
+    .content-container{
+        font-size: 2rem;
+        width: 100%;
+    }
+}
